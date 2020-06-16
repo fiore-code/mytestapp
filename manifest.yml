@@ -1,0 +1,9 @@
+# App Manifest
+applications:
+- name: Myapp
+  buildpacks: 
+   - https://github.com/cloudfoundry/staticfile-buildpack
+  path: ./dist/Myapp
+  command: "$HOME/boot.sh"
+  routes:
+    - route: Myappangularapp.eu-gb.appdomain.cloud
