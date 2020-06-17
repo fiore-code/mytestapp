@@ -4,6 +4,7 @@ applications:
   buildpacks: 
    - https://github.com/cloudfoundry/staticfile-buildpack
   path: dist/myapptest
+  memory : 256M
   command: "$HOME/boot.sh"
   routes:
     - route: Myappangularapp.eu-gb.appdomain.cloud
